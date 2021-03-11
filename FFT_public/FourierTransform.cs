@@ -63,7 +63,7 @@ namespace GetMaximumFrequenciesClasses
             return output;
         }
 
-        static Complex ComputeTwiddleFactor(int r, int N)
+        private static Complex ComputeTwiddleFactor(int r, int N)
         {
             Complex WrN;
 
@@ -517,7 +517,7 @@ namespace GetMaximumFrequenciesClasses
 
         }
 
-        static bool IsNumberAPowerOf2(int N)
+        public static bool IsNumberAPowerOf2(int N)
         {
             return (N != 0 && ((N & N - 1) == 0));
         }
