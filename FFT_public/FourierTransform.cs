@@ -49,7 +49,7 @@ namespace GetMaximumFrequenciesClasses
             return output;
         }
 
-        public static Complex[] BitReverseArrayShuffleAndToComplex(ref double[] input, int startIndex, int endIndex)
+        public static Complex[] BitReverseArrayShuffleAndToComplex( double[] input, int startIndex, int endIndex)
         {
             int nBits = GetMinimumBits(input.Length - 1);//-1 to take into account 0-based indexing
             int segmentLength = endIndex - startIndex + 1;
