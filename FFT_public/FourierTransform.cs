@@ -241,7 +241,7 @@ namespace GetMaximumFrequenciesClasses
 
             Complex[] X;
 
-            X = BitReverseArrayShuffleAndToComplex(ref x, startIndex, endIndex);//Shuffle the FFT input using bit-reverse technique and automatically convert to Complex number
+            X = BitReverseArrayShuffleAndToComplex(x, startIndex, endIndex);//Shuffle the FFT input using bit-reverse technique and automatically convert to Complex number
             Complex[] WrN = new Complex[N >> 1];
 
             for (int R = 0; R < N / 2; R++)
